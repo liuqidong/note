@@ -29,5 +29,11 @@ public class FileTest {
         Arrays.asList(files).forEach(file1 -> {
             System.out.println(file1.getName());
         });
+
+        //列出所有的磁盘根目录
+        File[] roots = File.listRoots();
+        Arrays.asList(roots).forEach(root->{
+            System.out.println(root);
+        });
     }
 }
