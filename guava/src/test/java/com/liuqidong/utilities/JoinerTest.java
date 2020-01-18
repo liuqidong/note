@@ -1,14 +1,9 @@
-package com.liuqidong.utillites;
+package com.liuqidong.utilities;
 
 import com.google.common.base.Joiner;
 import com.google.common.collect.ImmutableMap;
-import com.google.common.collect.ImmutableMultimap;
 import com.google.common.io.Files;
 import org.junit.Test;
-
-import static org.hamcrest.core.IsEqual.equalTo;
-import static org.hamcrest.core.IsSame.sameInstance;
-import static org.junit.Assert.*;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -17,6 +12,10 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+
+import static org.hamcrest.core.IsEqual.equalTo;
+import static org.junit.Assert.assertThat;
+import static org.junit.Assert.fail;
 
 public class JoinerTest {
     private final List<String> stringList = Arrays.asList("Java","C","Python","Ruby","Javscript","C++");
